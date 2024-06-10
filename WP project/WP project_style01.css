@@ -1,0 +1,131 @@
+
+* {/*CSS reset*/
+    margin: 0;
+    padding: 0;
+}
+    
+
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+header{
+    background-color: #EEF7FF;
+}
+#setting{
+    text-decoration: none;
+    font-weight: bold;
+    color: cornflowerblue;
+    background-color: papayawhip;
+}
+#before_login{
+    content-visibility: visible;
+}
+#after_login{
+    content-visibility: hidden;
+}
+#log_in_or_out{
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: coral;
+}
+
+header nav{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 15px 0;
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid black;
+    background-color: #e4ecf5;
+}
+nav a{
+    text-decoration: none;
+    padding: 0 15px;
+    color: black;
+}
+nav a:hover{
+    color: red;
+}
+
+article{
+    background-color: #CDE8E5;
+    text-align: center;
+}
+.login_page{
+    padding: 20%;
+}
+
+#page_name{
+    text-align: center;
+}
+
+.stocks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/*trend page*/
+.ryu_stocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.woo_stocks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/*setting page*/
+#held_stocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*주식 각 카드*/
+.stock_card{
+    flex: 1 0 21%;
+    border: 1px solid black;
+    border-radius: 20px 40px 20px 40px;
+    width: 25%;
+    height: 20%;
+    margin: 2%;
+    background-color: #d8eeeb;
+}
+/*반응성 추가 - 세로모드, 좁은 화면 - 줄 당 주식 카드 수, 글자 크기*/
+@media screen and (orientation: portrait), screen and (max-width: 480px) {/*smaertphone*/
+    nav, h2, h3, p, input, button{
+        size-adjust: 150%;
+        text-size-adjust: 150%;
+        font-weight: bold;
+    }
+    .stock_card{
+        flex: 1 0 41%;
+        width: 45%;
+        background-color: antiquewhite;
+    }
+}
+
+.like{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.like_button{
+    inline-size: 50px;
+    margin-right: 10px;
+}
+
+.modify_info{
+    width: 50%;
+}
+.dep_or_with_button{
+    width: 5%;
+}
+
+footer{
+    border-top: 1px solid black;
+    padding-top: 5px;
+    background-color: #7AB2B2;
+}
