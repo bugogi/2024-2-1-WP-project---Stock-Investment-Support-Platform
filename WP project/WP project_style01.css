@@ -18,13 +18,7 @@ header{
     color: cornflowerblue;
     background-color: papayawhip;
 }
-#before_login{
-    content-visibility: visible;
-}
-#after_login{
-    content-visibility: hidden;
-}
-#log_in_or_out{
+#login_or_signup_orout{
     font-weight: bold;
     padding: 10px 20px;
     background-color: coral;
